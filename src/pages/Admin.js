@@ -9,7 +9,7 @@ const Admin = () => {
 
     return (
         <div className="bg-orange-700 flex justify-around">
-            <div className="">
+            <div className="w-1/3">
                 <div
                     onClick={() => {
                         setHiddenAddProduct(true);
@@ -29,7 +29,7 @@ const Admin = () => {
                     List Product
                 </div>
             </div>
-            <div className="">
+            <div className="bg-slate-500 w-2/3">
                 {hiddenListProduct && <ListProduct />}
                 {hiddenAddProduct && <AddProduct />}
             </div>
